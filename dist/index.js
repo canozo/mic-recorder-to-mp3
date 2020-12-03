@@ -1,8 +1,4 @@
-(function (global, factory) {
-	typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory() :
-	typeof define === 'function' && define.amd ? define(factory) :
-	(global.MicRecorder = factory());
-}(this, (function () {
+function factory() {
 
 function new_byte$1(count) {
     return new Int8Array(count);
@@ -15497,15 +15493,15 @@ var VBRTag_1 = VBRTag;
 var new_byte = common.new_byte;
 var assert = common.assert;
 
-Lame = Lame_1;
-Presets = Presets_1;
-GainAnalysis = GainAnalysis_1;
-QuantizePVT = QuantizePVT_1;
-Quantize = Quantize_1;
-Takehiro = Takehiro_1;
-Reservoir = Reservoir_1;
-MPEGMode = MPEGMode_1;
-BitStream = BitStream_1;
+var Lame = Lame_1;
+var Presets = Presets_1;
+var GainAnalysis = GainAnalysis_1;
+var QuantizePVT = QuantizePVT_1;
+var Quantize = Quantize_1;
+var Takehiro = Takehiro_1;
+var Reservoir = Reservoir_1;
+var MPEGMode = MPEGMode_1;
+var BitStream = BitStream_1;
 
 
 
@@ -15956,5 +15952,6 @@ var MicRecorder = function () {
 
 return MicRecorder;
 
-})));
-//# sourceMappingURL=index.js.map
+}
+
+export default factory();
